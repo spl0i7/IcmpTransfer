@@ -18,7 +18,7 @@ if(len(sys.argv) == 4):
     file=sys.argv[1]
     saddr=sys.argv[2]
     daddr=sys.argv[3]
-    print("Size : "+str(fh.filesize(file))+" bytes")
+    print("Size : "+str(os.path.getsize(file))+" bytes")
     pointer=max_mtu
     fh.send_file(file, 1436, saddr, daddr)
     time=time.time()-start_time
