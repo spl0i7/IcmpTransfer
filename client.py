@@ -14,7 +14,7 @@ proto=Proto()
 fh=FileHandler()
 start_time=time.time()
 max_mtu=1436 #our default MTU
-if(len(sys.argv) < 4):
+if(len(sys.argv) == 4):
     file=sys.argv[1]
     saddr=sys.argv[2]
     daddr=sys.argv[3]
