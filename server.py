@@ -6,7 +6,6 @@ def icmpListen():
         s.setsockopt(socket.SOL_IP,socket.IP_HDRINCL,1)
         file =open("file.bin",'ab')
         while True:
-                data=s.recvfrom(1500)
                 addr=s.recvfrom(1500)
                 print ("Sender "+str(addr[1][0]))
                 print ("DATA : "+str(addr[0][28:])) #strip off headers
