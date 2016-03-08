@@ -1,5 +1,5 @@
 # IcmpTransfer
-Icmp file transfer implementation. This can be used to transfer file over ICMP altough it's kind of crude now but it kind of works.
+Icmp file transfer implementation. This can be used to transfer file over ICMP.
 # Bugs
 memory leakage in server ( had to Ctrl+C to exit server and stop receiving file)
 
